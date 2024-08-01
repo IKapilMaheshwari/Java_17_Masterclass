@@ -42,43 +42,43 @@ public class Account {
 
     }
 
-    public String getNumber() {
-        return number;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
-    }
-
-    public double getBalance() {
-        return balance;
-    }
-
-    public void setBalance(double balance) {
-        this.balance = balance;
-    }
-
-    public String getCustomerName() {
-        return customerName;
-    }
-
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
-    }
-
-    public String getCustomerEmail() {
-        return customerEmail;
-    }
-
-    public void setCustomerEmail(String customerEmail) {
-        this.customerEmail = customerEmail;
-    }
-
-    public String getCustomerPhone() {
-        return customerPhone;
-    }
-
-    public void setCustomerPhone(String customerPhone) {
-        this.customerPhone = customerPhone;
-    }
+//    public String getNumber() {
+//        return number;
+//    }
+//
+//    public void setNumber(String number) {
+//        this.number = number;
+//    }
+//
+//    public double getBalance() {
+//        return balance;
+//    }
+//
+//    public void setBalance(double balance) {
+//        this.balance = balance;
+//    }
+//
+//    public String getCustomerName() {
+//        return customerName;
+//    }
+//
+//    public void setCustomerName(String customerName) {
+//        this.customerName = customerName;
+//    }
+//
+//    public String getCustomerEmail() {
+//        return customerEmail;
+//    }
+//
+//    public void setCustomerEmail(String customerEmail) {
+//        this.customerEmail = customerEmail;
+//    }
+//
+//    public String getCustomerPhone() {
+//        return customerPhone;
+//    }
+//
+//    public void setCustomerPhone(String customerPhone) {
+//        this.customerPhone = customerPhone;
+//    }
 }

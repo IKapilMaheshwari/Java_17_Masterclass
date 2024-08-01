@@ -4,8 +4,8 @@ public class Main {
         //Account KapsAccount = new Account("12345",1000.00,"Kaps Mah","myemail@gmail.com","+91-494548");
 
         Account KapsAccount = new Account();
-        System.out.println(KapsAccount.getNumber());
-        System.out.println(KapsAccount.getBalance());
+//        System.out.println(KapsAccount.getNumber());
+//        System.out.println(KapsAccount.getBalance());
 
 //        KapsAccount.setNumber("12345");
 //        KapsAccount.setBalance(1000.00);
@@ -23,6 +23,6 @@ public class Main {
         KapsAccount.withdrawFunds(54.46);
 
         Account mukulsAccount = new Account("Mukul","mukul6789@gmail.com","1234");
-        System.out.println("Account No: " + mukulsAccount.getNumber() + "; name: " + mukulsAccount.getCustomerName());
+//        System.out.println("Account No: " + mukulsAccount.getNumber() + "; name: " + mukulsAccount.getCustomerName());
     }
 }
