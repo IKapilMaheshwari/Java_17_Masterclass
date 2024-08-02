@@ -8,12 +8,12 @@ public class Main {
 
         int[] firstArray = getRandomArray(10);
         System.out.println(Arrays.toString(firstArray));
-        Arrays.sort(firstArray);
+        Arrays.sort(firstArray);/*This method doesn't return anything, it's return type is void,*/
         System.out.println(Arrays.toString(firstArray));
 
         int[] secondArray = new int[10];
         System.out.println(Arrays.toString(secondArray));
-        Arrays.fill(secondArray, 5);
+        Arrays.fill(secondArray, 5);/*it sets every element to five.*/
         System.out.println(Arrays.toString(secondArray));
 
         int[] thirdArray = getRandomArray(10);
@@ -40,7 +40,7 @@ public class Main {
         }
 
         int[] a1 = {1,2,3,4,5};
-        int[] a2 = {1,2,3,4,5,0};
+        int[] a2 = {5,2,3,4,1};
         if (Arrays.equals(a1, a2)) {
             System.out.println("Arrays are equal");
         } else {
