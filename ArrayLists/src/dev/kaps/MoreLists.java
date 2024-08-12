@@ -1,6 +1,8 @@
 package dev.kaps;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class MoreLists {
@@ -26,22 +28,40 @@ public class MoreLists {
         System.out.println("Third item = " + groceries.get(2));/*Third item = milk*/
 
         if (groceries.contains("pickles")) {
-            System.out.println("List contains pickles");
+            System.out.println("List contains pickles");/*List contains pickles*/
         }
 
         groceries.add("yogurt");
-        System.out.println("first = " + groceries.indexOf("yogurt"));
-        System.out.println("last = " + groceries.lastIndexOf("yogurt"));
+        System.out.println("first = " + groceries.indexOf("yogurt"));/*first = 4*/
+        System.out.println("last = " + groceries.lastIndexOf("yogurt"));/*last = 8*/
 
-        System.out.println(groceries);
+        System.out.println(groceries);/*[apple, banana, milk, eggs, yogurt, pickles, mustard, cheese, yogurt]*/
         groceries.remove(1);
-        System.out.println(groceries);
+        System.out.println(groceries);/*[apple, milk, eggs, yogurt, pickles, mustard, cheese, yogurt]*/
         groceries.remove("yogurt");
-        System.out.println(groceries);
+        System.out.println(groceries);/*[apple, milk, eggs, pickles, mustard, cheese, yogurt]*/
 
-        groceries.removeAll(List.of("pickles","mustard","cheese"));
-        System.out.println(groceries);
+        groceries.removeAll(List.of("apple", "eggs"));
+        System.out.println(groceries);/*[milk, pickles, mustard, cheese, yogurt]*/
 
+        groceries.retainAll(List.of("apple", "milk", "mustard", "cheese"));
+        System.out.println(groceries);/*[milk, mustard, cheese]*/
 
+        groceries.clear();
+        System.out.println(groceries);/*[]*/
+        System.out.println("isEmpty = " + groceries.isEmpty());/*isEmpty = true*/
+
+        groceries.addAll(List.of("apple", "milk", "mustard", "cheese"));
+        groceries.addAll(Arrays.asList("eggs", "pickles", "mustard", "ham"));
+
+        System.out.println(groceries);/*[apple, milk, mustard, cheese, eggs, pickles, mustard, ham]*/
+        groceries.sort(Comparator.naturalOrder());
+        System.out.println(groceries);/*[apple, cheese, eggs, ham, milk, mustard, mustard, pickles]*/
+
+        groceries.sort(Comparator.reverseOrder());
+        System.out.println(groceries);/*[pickles, mustard, mustard, milk, ham, eggs, cheese, apple]*/
+
+        var groceryArray = groceries.toArray(new String[groceries.size()]);
+        System.out.println(Arrays.toString(groceryArray));/*[pickles, mustard, mustard, milk, ham, eggs, cheese, apple]*/
     }
 }

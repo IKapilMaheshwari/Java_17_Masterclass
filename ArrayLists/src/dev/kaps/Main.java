@@ -22,7 +22,7 @@ public class Main {
         groceryArray[0] = new GroceryItem("milk");
         groceryArray[1] = new GroceryItem("BMW", "Sports", 5);
         groceryArray[2] = new GroceryItem("oranges","PRODUCE",5);
-        System.out.println(Arrays.toString(groceryArray));
+        System.out.println(Arrays.toString(groceryArray));/*[1 MILK in DAIRY, 5 BMW in Sports, 5 ORANGES in PRODUCE]*/
 
         ArrayList objectList = new ArrayList();
         objectList.add(new GroceryItem("Buttermilk"));
@@ -34,6 +34,6 @@ public class Main {
         groceryList.add(new GroceryItem("oranges","PRODUCE",5));
         groceryList.set(0, new GroceryItem("Apple","PRODUCE",6));
         groceryList.remove(1);
-        System.out.println(groceryList);
+        System.out.println(groceryList);/*[6 APPLE in PRODUCE, 5 ORANGES in PRODUCE]*/
     }
 }
